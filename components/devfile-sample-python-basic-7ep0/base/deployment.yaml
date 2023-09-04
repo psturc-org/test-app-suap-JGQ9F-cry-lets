@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-7ep0
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/psturc_org/build-e2e-djzb-tenant/test-app-suap/devfile-sample-python-basic-7ep0@sha256:8ef3c63c03516d422955c789a1e56991078426dfa2fa45169e3889e26e65b232
         name: my-python
         ports:
         - containerPort: 8081
