@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-7ep0
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc_org/build-e2e-djzb-tenant/test-app-suap/devfile-sample-python-basic-7ep0@sha256:8ef3c63c03516d422955c789a1e56991078426dfa2fa45169e3889e26e65b232
+        name: my-python
+        resources: {}
+status: {}
