@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-hello-world-yela
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-hello-world-yela
+    app.kubernetes.io/part-of: test-app-suap
+  name: devfile-sample-hello-world-yela
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: devfile-sample-hello-world-yela
+status:
+  loadBalancer: {}
