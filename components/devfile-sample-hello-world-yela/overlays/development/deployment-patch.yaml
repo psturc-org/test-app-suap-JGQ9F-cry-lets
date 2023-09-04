@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-yela
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc_org/build-e2e-djzb-tenant/test-app-suap/devfile-sample-hello-world-yela@sha256:687134f7492057bce1ecd9a514ff1c392031a8085b385f057042f425e0cfa601
+        name: my-nginx
+        resources: {}
+status: {}
